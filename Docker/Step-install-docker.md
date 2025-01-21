@@ -1,4 +1,4 @@
-## install Docker (Ubuntu)
+## Install Docker (Ubuntu)
 
 ## Set up Docker's apt repository.
 ```bash
@@ -11,7 +11,7 @@ sudo chmod a+r /etc/apt/keyrings/docker.asc
 
 ## Add the repository to Apt sources:
 echo \"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
-  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+$(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 
@@ -24,3 +24,16 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ```bash
 sudo docker run hello-world
 ```
+## Verify that the installation is successful by running the hello-world image:
+```bash
+sudo service docker start
+sudo docker run hello-world
+```
+## Run the following command to uninstall all conflicting packages:
+```bash
+for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+```
+
+### Install Docker to Different flavours Linux Distribution.
+
+[download link](https://docs.docker.com/engine/install/.)
