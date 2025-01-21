@@ -17,7 +17,7 @@ sudo systemctl status jenkins
 ```
 If everything has been set up correctly, you should see an output like this:
 
-![output To Attach](https://github.com/devopssanthosh58/EKS-Full-Setup/blob/main/jenkins.png)
+![output To Attach](https://github.com/devopssanthosh58/DevOps-Tools/blob/main/jenkins.png)
 
 ### Install Jenkins to Different flavours Linux Distribution.
 
