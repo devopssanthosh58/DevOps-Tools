@@ -1,6 +1,18 @@
 
 ## To install Debian/Ubuntu (LTS)
 
+## Prerequisite for java
+```bash
+sudo apt install default-jre              # version 2:1.17-75, or
+sudo apt install openjdk-17-jre-headless  # version 17.0.12+7-1ubuntu2~24.04
+sudo apt install openjdk-21-jre-headless  # version 21.0.4+7-1ubuntu2~24.04
+sudo apt install openjdk-19-jre-headless  # version 19.0.2+7-4
+sudo apt install openjdk-20-jre-headless  # version 20.0.2+9-1
+sudo apt install openjdk-22-jre-headless  # version 22~22ea-1
+sudo apt install openjdk-11-jre-headless  # version 11.0.24+8-1ubuntu3~24.04.1
+sudo apt install openjdk-8-jre-headless   # version 8u422-b05-1~24.04
+```
+## Install Jenkins
 ```bash
 
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \ https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
